@@ -109,7 +109,7 @@ body{
 }
 
 .header__text-box{
-    background-image: url("/img/main_top_river.png");
+    background-image: url("../img/main_top_river.png");
     background-size: cover;
     background-position: center;
     height: 65rem;
@@ -264,22 +264,22 @@ body{
 
 /* 이미지 배경으로 넣기 */
 .featured-1{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("/img/travel/featured_trps_1.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("../img/travel/featured_trps_1.png");
     background-size: cover;
 }
 
 .featured-2{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("/img/travel/featured_trps_2.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("../img/travel/featured_trps_2.png");
     background-size: cover;
 }
 
 .featured-3{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("/img/travel/featured_trps_3.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("../img/travel/featured_trps_3.png");
     background-size: cover;
 }
 
 .featured-4{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("/img/travel/featured_trps_4.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.8)),url("../img/travel/featured_trps_4.png");
     background-size: cover;
 }
 
