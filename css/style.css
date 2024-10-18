@@ -231,6 +231,7 @@ body{
 
 .content__featured-trips{
     padding:2rem 20rem;
+    position: relative;
 }
 
 .heading-secondary--main{
@@ -341,16 +342,25 @@ body{
 
 .featured-trips__slide{
     margin-top:2rem;
-    display:flex;
-    justify-content: space-evenly;
+    position: relative;
 }
 
 .btn-slide-left{
     display:inline-block;
     width:5.5rem;
     height:5.5rem;
-    background-color:tomato;
+    border : .3rem solid #999;
     border-radius: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.btn-slide-left::after{
+    content: '◀';
+    font-size: 3rem;
+    position:absolute;
+    right: 50%;
+    transform: translateX(40%)
 }
 
 
@@ -358,6 +368,89 @@ body{
     display:inline-block;
     width:5.5rem;
     height:5.5rem;
-    background-color:tomato;
+    border : .3rem solid #999;
     border-radius: 100%;
-    }
+    position: absolute;
+    right: 0;    
+    
+}
+
+.btn-slide-right::after{
+    content: '▶';
+    font-size: 3rem;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-40%)
+}
+
+
+.content__tour-reason{
+    margin-top: 15rem;
+    background-color: antiquewhite;
+    position: relative;
+    left:35%;
+    width:65%;
+    height: 75rem;
+    border-radius: 1.5rem;
+}
+
+.content__tour-reason-img{
+    width: 68rem;
+    height: 68rem;
+    border-radius: 3rem;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 92%;
+}
+
+.reason--absolute{
+    position: absolute;
+    top: 25%;
+    left: 19.5%;
+}
+
+.reason--absolute .heading-secondary--sub{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.tour-reason__reason-box{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 43%;
+    right: 50%;
+    transform: translateX(30%);
+}
+
+.reason-text-box{
+    width: 28rem;
+    height: 22rem;
+    background-color: #fff;
+    border-radius: 2rem;
+
+    margin-right: 5rem;
+}
+
+.reason-img{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.reason-title{
+    display:block;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.reason-sub{
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    width:65%
+}
