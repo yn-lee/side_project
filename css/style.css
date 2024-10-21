@@ -13,7 +13,7 @@ html {
 
 body{
     line-height: 1.7;
-    padding : 2rem 4rem 7rem; 
+    padding : 2rem 2rem 7rem; 
 }
 
 .header{
@@ -165,18 +165,25 @@ body{
     margin-left: 35rem;
 }
 
+/*
+.content__main{
+    width: 1860px;
+    margin: 0;
+}
+*/
+
 .content__trending-destinations{
     margin-top: 3rem;
     padding:5rem 20rem;
 }
 
-.content__trending-destinations .heading-secondary .heading-secondary--main{
+.heading-secondary .heading-secondary--main{
     display:block;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3.5rem;
+    font-weight: 800;
 }
 
-.content__trending-destinations .heading-secondary .heading-secondary--sub{
+.heading-secondary .heading-secondary--sub{
     display:block;
     font-size: 1.3rem;
     font-weight: 400;
@@ -190,7 +197,7 @@ body{
 }
 
 .trending-destinations{
-    margin-top:7rem;
+    margin-top:5rem;
 }
 
 .trending-destinations__card{
@@ -241,7 +248,7 @@ body{
 }
 
 .featured-trips{
-    margin-top:3rem;
+    margin-top:5rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -261,6 +268,7 @@ body{
     height:37rem;
     border-radius: 1rem;
     position: relative;
+    box-shadow: 0 1.3rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 /* 이미지 배경으로 넣기 */
@@ -292,15 +300,18 @@ body{
     font-size: 1.2rem;
 }
 
-.btn-picked{
+.btn-circle{
     display:inline-block;
     width:3.5rem;
     height:3.5rem;
-    background-color: rgb(255, 255, 255,.4);
     border-radius: 100%;
+}
+
+.btn-picked{
+    background-color: rgb(255, 255, 255,.4);
     position:absolute;
     top:2.7rem;
-    right:3.6rem;
+    right:5%;
 }
 
 .trips__info{
@@ -320,7 +331,7 @@ body{
     font-size:1.3rem;
 }
 
-.tour-rating{
+.trips__info .tour-rating{
     position: absolute;
     margin-top: 2.5rem;
     left:7.7rem;
@@ -345,29 +356,30 @@ body{
     position: relative;
 }
 
-.btn-slide-left{
+.btn-slide--left{
     display:inline-block;
-    width:5.5rem;
-    height:5.5rem;
+    width:4.5rem;
+    height:4.5rem;
     border : .3rem solid #999;
     border-radius: 100%;
     position: absolute;
     left: 0;
 }
 
-.btn-slide-left::after{
+.btn-slide--left::after{
     content: '◀';
     font-size: 3rem;
     position:absolute;
     right: 50%;
-    transform: translateX(40%)
+    transform: translateX(40%);
+    top:-12%;
 }
 
 
-.btn-slide-right{
+.btn-slide--right{
     display:inline-block;
-    width:5.5rem;
-    height:5.5rem;
+    width:4.5rem;
+    height:4.5rem;
     border : .3rem solid #999;
     border-radius: 100%;
     position: absolute;
@@ -375,21 +387,22 @@ body{
     
 }
 
-.btn-slide-right::after{
+.btn-slide--right::after{
     content: '▶';
     font-size: 3rem;
     position:absolute;
     left: 50%;
-    transform: translateX(-40%)
+    transform: translateX(-40%);
+    top:-12%;
 }
 
 
 .content__tour-reason{
     margin-top: 15rem;
-    background-color: antiquewhite;
+    background-color: #fdf3ef;
     position: relative;
-    left:35%;
-    width:65%;
+    left:30%;
+    width:70%;
     height: 75rem;
     border-radius: 1.5rem;
 }
@@ -401,7 +414,8 @@ body{
     position:absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 92%;
+    right: 90.8%;
+    box-shadow: 0 1.3rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .reason--absolute{
@@ -421,7 +435,7 @@ body{
     justify-content: center;
     position: absolute;
     top: 43%;
-    right: 50%;
+    right: 53%;
     transform: translateX(30%);
 }
 
@@ -453,4 +467,257 @@ body{
     margin-left: 3rem;
     font-size: 1.3rem;
     width:65%
+}
+
+.content__popular_tours{
+    margin-top: 3rem;
+    padding:5rem 20rem;
+}
+
+.popular_tours__imgs-box{
+    margin-top:5rem;
+}
+
+.popular_tours__imgs{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.popular_tours__imgs-item{
+    position: relative;
+    width:20rem;
+    height: 24rem;
+    border-radius: 2rem;
+    text-align: center;
+    
+    cursor: pointer; 
+    box-shadow: 0 1.2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.popular_tours__item1{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_1.png");
+    background-size: cover;
+}
+
+.popular_tours__item2{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_2.png");
+    background-size: cover;
+}
+
+.popular_tours__item3{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_3.png");
+    background-size: cover;
+}
+
+.popular_tours__item4{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_4.png");
+    background-size: cover;
+}
+
+.popular_tours__item5{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_5.png");
+    background-size: cover;
+}
+
+.popular_tours__item6{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_6.png");
+    background-size: cover;
+}
+
+.popular-tour-title{
+    color:#fff;
+    position: absolute;
+    bottom: 5rem;
+    font-size: 1.6rem;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+.popluar-tour-cnt{
+    color:#fff;
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1rem;
+    transform: translateX(-50%);
+}
+
+.content_foot_prints{
+    margin-top:8rem;
+    padding-top: 9rem;
+    background-color: #fdf3ef;
+    border-radius: 3rem;
+    text-align: center;
+    padding-bottom: 15rem;
+}
+
+
+.foot_prints-icons-box{
+    margin-top: 10rem;
+}
+
+.foot-prints{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+}
+
+.foot_prints-item{
+    margin-right: 20rem;
+}
+
+.foot_prints-item:last-child{
+    margin-right: 0;
+}
+
+.total-cnt{
+    display: block;
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.icon-title{
+    font-size: 1.5rem;
+}
+
+.content__best_new-york{
+    margin-top: 5rem;
+    padding:5rem 20rem;
+}
+
+.title-dark-gray{
+    color:#C6C6D2;
+}
+
+.new-york__card-box{
+    margin-top:5rem;
+}
+
+.new-york-card{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: left;
+}
+
+.new-york-card-item{
+    margin-right: 3rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: .1rem solid #eaeaee;
+    width:100%;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.new-york-card-item:last-child{
+    margin-right: 0;
+}
+
+.new-york-img{
+    display: inline-block;
+    width: 100%;
+    height: 20rem;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.new-york__info{
+    width: 100%;
+    padding: 2rem 2rem 1.5rem;
+    position:relative;
+}
+
+.new-york__info::after{
+    content:'';
+    width:3.3rem;
+    height: 3.3rem;
+    color:#999;
+
+}
+
+.new-york__info .tour-location{
+    display:block;
+    margin-left:1rem;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    color:#999;
+}
+
+.new-york__info .tour-content{
+    display:block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.new-york__info .tour-rating{
+    position:absolute;
+    right: 2rem;
+    font-size:1.1rem;
+}
+
+.tour-division{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background:  #eaeaee;
+}
+
+.tour-days{
+    font-size:1.3rem;
+    margin-left: 10%;
+}
+
+.tour-cost{
+    position:absolute;
+    right:10%;
+    font-size:1.3rem;
+    font-weight: 700;
+}
+
+.btn-picked-white{
+    background-color:#fff;
+    position:absolute;
+    bottom: 90%;
+    right: 3%;
+}
+
+.content__travelers-review{
+    margin-top: 5rem;
+    padding:5rem 20rem;
+    background-color: #05073C;
+    border-radius: 1.5rem;
+}
+
+.content__travelers-review .heading-secondary{
+    padding-top:10rem;
+    color:#fff;
+    width:25%;
+}
+
+.travelers-review__text-box{
+    display:flex;
+    justify-content: left;
+    margin-top:5rem;
+}
+
+.travelers-review__summary{
+    margin-right: 50rem;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+}
+
+.heading-tertiary{
+    text-align: left;
+    margin-right: 15rem;
+}
+
+.heading-tertiary--main{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.heading-tertiary--sub{
+    font-weight: 400;
 }
