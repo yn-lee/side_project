@@ -474,17 +474,17 @@ body{
     padding:5rem 20rem;
 }
 
-.popular_tours__imgs-box{
+.popular-tours__imgs-box{
     margin-top:5rem;
 }
 
-.popular_tours__imgs{
+.popular-tours__imgs{
     display:flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.popular_tours__imgs-item{
+.popular-tours__imgs-item{
     position: relative;
     width:20rem;
     height: 24rem;
@@ -495,32 +495,32 @@ body{
     box-shadow: 0 1.2rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.popular_tours__item1{
+.popular-tours__item1{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_1.png");
     background-size: cover;
 }
 
-.popular_tours__item2{
+.popular-tours__item2{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_2.png");
     background-size: cover;
 }
 
-.popular_tours__item3{
+.popular-tours__item3{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_3.png");
     background-size: cover;
 }
 
-.popular_tours__item4{
+.popular-tours__item4{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_4.png");
     background-size: cover;
 }
 
-.popular_tours__item5{
+.popular-tours__item5{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_5.png");
     background-size: cover;
 }
 
-.popular_tours__item6{
+.popular-tours__item6{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(5, 7, 60,.5)),url("../img/travel/popular_things_to_do_6.png");
     background-size: cover;
 }
@@ -542,7 +542,7 @@ body{
     transform: translateX(-50%);
 }
 
-.content_foot_prints{
+.content__foot-prints{
     margin-top:8rem;
     padding-top: 9rem;
     background-color: #fdf3ef;
@@ -552,7 +552,7 @@ body{
 }
 
 
-.foot_prints-icons-box{
+.foot-prints__icons-box{
     margin-top: 10rem;
 }
 
@@ -562,11 +562,11 @@ body{
     justify-content: center;
 }
 
-.foot_prints-item{
+.foot-prints-item{
     margin-right: 20rem;
 }
 
-.foot_prints-item:last-child{
+.foot-prints-item:last-child{
     margin-right: 0;
 }
 
@@ -660,7 +660,9 @@ body{
 .tour-division{
     margin-top: 4rem;
     margin-bottom: 2rem;
-    background:  #eaeaee;
+    border: 0;
+    height: 0;
+    border-top: .1rem solid #e6e3e3;
 }
 
 .tour-days{
@@ -683,8 +685,8 @@ body{
 }
 
 .content__travelers-review{
-    margin-top: 5rem;
-    padding:5rem 20rem;
+    margin-top: 8rem;
+    padding:10rem 20rem;
     background-color: #05073C;
     border-radius: 1.5rem;
 }
@@ -699,13 +701,14 @@ body{
     display:flex;
     justify-content: left;
     margin-top:5rem;
+    position: relative;
 }
 
 .travelers-review__summary{
-    margin-right: 50rem;
     color:#fff;
     display:flex;
-    justify-content: space-between;
+    justify-content: left;
+    width:60%;
 }
 
 .heading-tertiary{
@@ -720,4 +723,150 @@ body{
 
 .heading-tertiary--sub{
     font-weight: 400;
+}
+
+.travelers-review-card{
+    background-color: #fff;
+    margin-left: -5rem;
+    width: 52rem;
+    height: 34.3rem;
+    border-radius: 2rem;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.review-card__text-box{
+    text-align: left;
+    position:relative;
+    padding: 5.5rem 5rem;
+}
+
+.review-title{
+    font-size: 1.7rem;
+    color:#EB662B;
+}
+
+.review-title::after{
+    content:url(../img/icon/Vector.svg);
+    position:absolute;
+    right: 0;
+    margin-right:5rem;
+}
+
+.review-detail{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.review-division{
+    margin-bottom: 2rem;
+    border: 0;
+    height: 0;
+    border-top: .1rem solid #e6e3e3;
+}
+
+.review-write__info{
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-write__info::after{
+    content:url(../img/writer.png);
+    position:absolute;
+    left: 5rem;
+    bottom:3rem;
+}
+.review-wirter{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.review-wirter-job{
+    font-size: 1.4rem;
+}
+
+.text-box__shadow{
+    position: absolute;
+    width: 50rem;
+    height: 32rem;
+    background-color: rgb(217, 217, 217);
+    border-radius: 2rem;
+    right: 13rem;
+    top: -24.1rem;
+    transform: rotate(2.6deg);
+}
+
+.text-box__shadow::before{
+    content: '';
+    position: absolute;
+    width: 23.5rem;
+    height: 31rem;
+    background-color: rgb(217, 217, 217);
+    border-radius: 2rem;
+    left: 26rem;
+    transform: rotate(9deg);
+}
+
+.text-box__shadow::after{
+    content: '';
+    position: absolute;
+    width: 38.6rem;
+    height: 27.8rem;
+    top: 2.1rem;
+    background-color: rgb(217, 217, 217);
+    border-radius: 2rem;
+    left: 12.6rem;
+    transform: rotate(5deg);
+}
+
+.travel-brands{
+    margin-top: 20rem;
+    text-align: center;
+    align-items: center;
+    transform: translateX(20%);
+    width:70%;
+}
+
+.travel-brands-label{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.brands-list{
+    margin-top: 5rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.content__travel-articles{
+    margin-top: 3rem;
+    padding:5rem 20rem;
+}
+
+.travel-articles{
+    margin-top: 5rem;
+}
+
+.travel-articles__imgs{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles__imgs-item{
+    margin-right: 12rem;
+}
+
+.articles__imgs-item:last-child{
+    margin-right: 0;
+}
+
+.img__info{
+    display: flex;
+    flex-direction: column;
 }
