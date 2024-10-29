@@ -191,8 +191,8 @@ body{
 }
 
 .heading-secondary--sub::after{
-    display:block; 
     content: ''; 
+    display:block; 
     clear: both;
 }
 
@@ -859,7 +859,8 @@ body{
 }
 
 .articles__imgs-item{
-    margin-right: 12rem;
+    width: 33%;
+    margin-right: 2rem;
 }
 
 .articles__imgs-item:last-child{
@@ -869,4 +870,12 @@ body{
 .img__info{
     display: flex;
     flex-direction: column;
+}
+
+.articles-img::after{
+    content:'Trips';
+    position:absolute;
+    width: 3rem;
+    height: 3rem;
+
 }
